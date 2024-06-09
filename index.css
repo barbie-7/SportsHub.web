@@ -9,7 +9,15 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: var(--scroll-psadding, 1rem);
 }
-  
+.primary-navigation {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-size: 1.5rem;
+    background: var(--clr-primary-400);
+  } 
   .navigation {
     position: fixed;
     left: 0;
