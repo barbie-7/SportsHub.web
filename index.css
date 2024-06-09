@@ -187,7 +187,7 @@ body{
 .content{
     width: 100%;  
     position: absolute;
-    top: 50%;
+    top: 54%;
     transform: translateY(-50%);
     text-align: center;
     color: #fff;
@@ -241,10 +241,9 @@ body{
 
 
 .about{
-  min-height: 60vh;  
   width: 100%;    
   background-color: #191919;
-  padding: 7%;
+  padding: 3%;
 }
 .parent{
     height: 650px;
@@ -277,6 +276,9 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+.main_about2{
+ display: none;   
+}
 .about-text h1{
     color: white;
     font-size: 80px;
@@ -308,12 +310,9 @@ body{
     cursor: pointer;
 }
 .services{
-  min-height: 150vh; 
-  
   width: 100%;    
   background-color: #191919;
-  padding: 5%;
-  
+  padding: 3%;
   align-items: center;
   justify-content: center;
 }
@@ -350,26 +349,91 @@ body{
     margin-bottom: 5px;
     text-align: center;
 }
+.services-col2{
+    display: none;
+    width:  500px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
 .services-col img{
     width: 50%;
     border-radius: 20px ;
     cursor: pointer;
     transition: transform 0.5s ;
 }
-
+.services-col2 img{
+    display: none;
+    width: 50%;
+    border-radius: 20px ;
+    cursor: pointer;
+    transition: transform 0.5s ;
+}
+.services-col2 img:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
 .services-col img:hover{
     transform: translateY(-10px);
+    cursor: pointer;
 }
 .services h3{
     color: white;
     font-size: 18px;
     text-transform: capitalize;
-    margin-bottom: 15px;
+    margin-bottom: 90px;
     margin-top: 10px;
 }
 
+.location h1{
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+    margin-bottom: 60px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    color: white;
+  }
+  
+  .location h1::after{
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 3px;
+    background: white;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .location{
+    width: 100%;    
+    background-color: #191919;
+    padding: 1%;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+.map-container{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 40.25%;
+   
+} 
+iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 80%;
+    border: none;
+    border-radius: 10px;
+    margin-left: 15%;
+}
+
 .contact-container{
-    display: flex;
+    display: block;
 }
 .services p{
     color: #c1c1c1;
@@ -379,7 +443,10 @@ body{
     margin-bottom: 100px;
 }
 .contact{
+    
     background-color: #191919;
+    display: flex;
+    justify-content: center;
 }
 .contact-row{
    display: flex;
@@ -397,15 +464,14 @@ body{
     color: white;
 }
 .contact-container{
-    padding: 10px 10%;
+    padding: 10px 5%;
 }
 .contact-left{
-   flex-basis: 35%; 
+   flex-basis: 50%; 
 }
 .contact-right{
-    flex-basis: 60%;
-
-margin: 5px;}
+    flex-basis: 50%;
+    }
 
 .contact-left p i{
     color: #ff004F;
@@ -425,7 +491,7 @@ margin: 5px;}
 }
 .contact-icons a{
     text-decoration: none;
-    font-size: 30px;
+    font-size: 35px;
     margin-right: 15px;
     color: #ababab;
     display: inline-block;
@@ -509,17 +575,6 @@ form input, form textarea{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 .contact-form .send-btn{
     float: right;
     background: rgba(255,255,255,0.10);
@@ -560,6 +615,61 @@ p.copyright {
     text-align: center;
     background-color: #c1c1c1;
 }
+@media (max-width: 1370px){
+    .about{
+        padding-top: 8%;
+        padding: 4%;
+      }
+      .parent{
+          height: 550px;
+          width: 420px;
+          overflow: hidden;
+          border-radius: 10px;
+          cursor: pointer;
+      }
+      .about img{
+        margin-right: 10px;
+      }
+     
+      
+      .about-text{
+          width: 500px;
+      }
+      .main_about{
+          width: 1330px;
+          max-width: 95%;
+          margin: 0 auto;
+         
+          align-items: center;
+          justify-content: space-between;
+      }
+      .about-text h1{
+        font-size: 70px;
+          margin-bottom: 23px;
+      }
+      
+      .about-text p{
+        color: #c1c1c1;
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+      
+      .services-col{
+        width:  450px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .services-col img{
+        width: 200px;
+        border-radius: 20px ;
+        cursor: pointer;
+        transition: transform 0.5s ;
+    }
+   
+}
 
   @media (max-width: 1145px) {
     .icons{
@@ -599,7 +709,7 @@ p.copyright {
     .navbar a{
         display: block;
         font-size: 1.1rem;
-        margin: 1.5rem 0;
+        margin: 1.0rem 0;
         text-align: center;
         transform: translateY(-50px);
         opacity: 0;
@@ -620,6 +730,85 @@ p.copyright {
     font-size: 13px;
 }
 }
+@media (max-width: 1085px){
+   .about{
+    text-align: center;
+   }
+    .main_about2{
+        display: inline-block;   
+       }
+       .main_about{
+        display: none;   
+       }
+       .parent{
+        height: 600px;
+        width: 520px;
+    }
+    .button-about{
+        margin-bottom: 20px;
+    }
+
+
+    .map-container{
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 40.25%;
+       
+    } 
+    iframe{
+        width: 90%;
+        height: 80%;
+        margin-left: 5%;
+    }
+    }
+  
+@media (max-width: 915px) {
+    .contact-row{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 500px;
+     }
+     .contact-left{
+        flex-basis: 50%; 
+        width: 500px;
+     }
+     .contact-right{
+         flex-basis: 50%;
+         width: 500px;
+         }
+         
+}   
+@media (max-width: 815px){
+    .services-col{
+        display: none;
+    }
+    .services-col img{
+        display: none;
+    }
+    
+    .services-col2{
+        display: inline-block;
+        width:  500px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .services-col2 img{
+        display: inline-block;
+        width: 200px;
+        border-radius: 20px ;
+        cursor: pointer;
+        transition: transform 0.5s ;
+    }
+    .services h3{
+        margin-bottom: 70px;
+        margin-top: 10px;
+    }
+}    
+
+
 @media (max-width: 675px) {
     .content h1{
         font-size: 40px;
@@ -630,8 +819,84 @@ p.copyright {
     button{
         width: 170px; 
     }
-}
 
+    iframe{
+        height: 90%;
+    }
+}
+@media (max-width: 600px){
+    .parent{
+        height: 500px;
+        width: 420px;
+       
+    }  
+    .about-text{
+        width: 420px;
+    }
+    .about-text h1{
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+    
+    
+    .about-text p{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    
+}
+@media (max-width: 475px){
+    .parent{
+        height: 400px;
+        width: 320px;
+       
+    }  
+    .about-text{
+        width: 320px;
+    }
+    .about-text p{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+}
+@media (max-width: 550px){
+    .services-row{
+        display: inline;
+    }
+    .services-col2{
+        
+        width:  100%;
+    }
+    iframe{
+        height: 100%;
+    }
+    .contact-sub{
+        margin-top: 35px
+    }
+}
+@media (max-width: 555px) {
+    .contact-row{
+        width: 320px;
+     }
+     .contact-left{
+        flex-basis: 50%; 
+        width: 320px;
+     }
+     .contact-right{
+         flex-basis: 50%;
+         width: 320px;
+         }
+         .contact-left p{
+            font-size: 14px; 
+        }   
+        .contact-left p i{
+            color: #ff004F;
+            font-size: 21px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+}   
 @media (max-width: 510px) {
     .content h1{
         font-size: 30px;
@@ -643,6 +908,15 @@ p.copyright {
         width: 160px; 
     }
 }
+@media (max-width: 460px) {
+    .services h1{
+        font-size: 40px;
+      }
+      
+      .services h1::after{
+        width: 160px;
+      }
+}
 @media (max-width: 420px) {
     .content h1{
         font-size: 30px;
@@ -652,6 +926,9 @@ p.copyright {
     }
     button{
         width: 160px; 
+    }
+    iframe{
+        height: 110%;
     }
 }
 

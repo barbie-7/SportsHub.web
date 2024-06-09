@@ -35,3 +35,4 @@ const onRouteClick = route => {
 window.addEventListener("load", () => {
   startTransition();
 });
+
